@@ -23,6 +23,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   display: flex;
   place-items: center;
@@ -36,12 +40,28 @@ body {
 }
 
 @layer components {
+  .section-container {
+    @apply py-8 sm:py-12 md:py-16;
+  }
+
+  .content-container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
   .about-subheading {
-    @apply text-secondary-light text-2xl lg:text-3xl font-bold mb-4;
+    @apply text-secondary-light text-2xl md:text-[26px] lg:text-3xl font-bold mb-4;
+  }
+
+  .contact-button {
+    @apply bg-accent hover:bg-accent-light text-neutral-800 font-medium px-6 rounded-lg transition-all duration-300  hover:shadow-md hover:shadow-accent/20;
   }
 
   .skill-icon {
     filter: brightness(0) invert(1);
+  }
+
+  .footer-link {
+    @apply text-neutral-200 hover:text-neutral-400 transition-colors;
   }
 }
 

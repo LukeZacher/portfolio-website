@@ -1,4 +1,4 @@
-import logo from "../../../assets/logo.svg";
+import logo from "../../../assets/logos/site-logo.svg";
 import React, { useState, useEffect, useRef } from "react";
 import { Menu, X } from "lucide-react";
 
@@ -73,7 +73,7 @@ const Navbar = () => {
             <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-secondary transition-all duration-300 group-hover:w-full" />
           </a>
           <a
-            href="/work"
+            href="#work"
             className="text-neutral-200 hover:text-neutral-50 transition-colors font-medium relative group"
             tabIndex={0}
           >
@@ -81,7 +81,7 @@ const Navbar = () => {
             <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-secondary transition-all duration-300 group-hover:w-full" />
           </a>
           <a
-            href="/skills"
+            href="#skills"
             className="text-neutral-200 hover:text-neutral-50 transition-colors font-medium relative group"
             tabIndex={0}
           >
@@ -93,7 +93,7 @@ const Navbar = () => {
         {/* Contact button on right */}
         <a
           href="#contact"
-          className="hidden md:block bg-accent hover:bg-accent-light text-neutral-800 font-medium px-6 py-[6px] rounded-lg transition-all duration-300 hover:scale-105 hover:shadow-md hover:shadow-accent/20"
+          className="contact-button hidden md:block py-[6px] hover:scale-105"
           tabIndex={0}
         >
           Contact
@@ -106,7 +106,7 @@ const Navbar = () => {
         ref={menuRef}
         role="menu"
         aria-label="Mobile navigation menu"
-        className={`md:hidden fixed top-[64px] left-0 right-0 bg-primary-light/95 backdrop-blur-sm transform transition-all duration-300 ease-in-out ${
+        className={`md:hidden absolute top-[64px] left-0 right-0 bg-primary-light/95 backdrop-blur-sm transform transition-all duration-300 ease-in-out ${
           isMenuOpen
             ? "opacity-100 translate-y-0"
             : "opacity-0 -translate-y-2 pointer-events-none"

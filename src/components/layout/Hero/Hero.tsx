@@ -3,7 +3,7 @@ import { GithubIcon, LinkedinIcon, Download } from "lucide-react";
 const Hero = () => {
   return (
     <section className="min-h-[calc(100vh-60px)] bg-primary pb-8 sm:pb-0">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 lg:py-12 xl:py-6 2xl:py-40 h-full">
+      <div className="content-container py-4 lg:py-12 xl:py-6 2xl:py-40 h-full">
         {/* Container for left text and right image */}
         <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-5 gap-4 xl:gap-12 mb-8 md:mb-16">
           {/* Left side text and social media icons */}
@@ -29,7 +29,7 @@ const Hero = () => {
                 through marketing, graphic design, and website creation while
                 providing comprehensive IT support.{" "}
                 <a
-                  href="/path-to-resume.pdf"
+                  href="/documents/LukeZacher-Resume-2025.pdf"
                   download
                   className="text-secondary hover:text-secondary-light transition-colors"
                 >
@@ -37,7 +37,7 @@ const Hero = () => {
                 </a>{" "}
                 or{" "}
                 <a
-                  href="/work"
+                  href="#work"
                   className="text-secondary hover:text-secondary-light transition-colors"
                 >
                   visit my work section
@@ -54,13 +54,15 @@ const Hero = () => {
             {/* Social icons */}
             <div className="flex gap-4 mb-8 md:mb-0">
               <a
-                href="#"
+                href="https://github.com/LukeZacher"
+                target="_blank"
                 className="text-neutral-200 hover:text-secondary transition-colors"
               >
                 <GithubIcon size={24} />
               </a>
               <a
-                href="#"
+                href="https://www.linkedin.com/in/lukezacher/"
+                target="_blank"
                 className="text-neutral-200 hover:text-secondary transition-colors"
               >
                 <LinkedinIcon size={24} />
@@ -79,12 +81,12 @@ const Hero = () => {
         <div className="flex flex-col sm:flex-row justify-center gap-4 max-w-[160px] mx-auto sm:max-w-none">
           <a
             href="#contact"
-            className="min-w-[140px] bg-accent hover:bg-accent-light text-neutral-800 font-medium px-6 py-3 rounded-lg transition-all duration-300 hover:scale-105 text-center"
+            className="contact-button min-w-[140px] py-3 text-center hover:scale-105"
           >
             Contact Me
           </a>
           <a
-            href="/path-to-resume.pdf"
+            href="/documents/LukeZacher-Resume-2025.pdf"
             download
             className="min-w-[140px] bg-secondary hover:bg-secondary-light text-neutral-50 font-medium px-6 py-3 rounded-lg transition-colors duration-300 text-center flex items-center justify-center gap-2"
           >

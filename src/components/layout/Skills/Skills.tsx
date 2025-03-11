@@ -109,8 +109,8 @@ const skillCategories = [
 
 const Skills = () => {
   return (
-    <section className="bg-primary-light py-8 sm:py-12 md:py-16" id="skills">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6">
+    <section className="bg-primary-light section-container" id="skills">
+      <div className="content-container">
         {/* Header text */}
         <SectionHeader
           title="Skills"

@@ -1,8 +1,8 @@
 import SectionHeader from "../../shared/SectionHeader";
 import EducationCard from "./EducationCard";
 import WorkExperienceCard from "./WorkExperienceCard";
-import creightonLogo from "../../../assets/creighton-logo.png";
-import fidelityFinancialCorporationLogo from "../../../assets/fidelity-financial-corporation-logo.jpg";
+import creightonLogo from "../../../assets/logos/creighton-logo.png";
+import fidelityFinancialCorporationLogo from "../../../assets/logos/fidelity-financial-corporation-logo.jpg";
 
 const researchResponsibilites = [
   "Lead front-end development for a U.S. Air Force-funded research project studying mob behavior and simulation, creating both an information website and interactive simulation platform",
@@ -34,31 +34,24 @@ const researchSkills = [
   "Flask",
   "SQL",
   "Git",
-  "Figma",
-  "Adobe Photoshop",
-  "Adobe Illustrator",
+  "Django",
 ];
 
 const fidelityFinancialSkills = [
   "React",
   "TailwindCSS",
-  "Affinity Designer",
-  "Affinity Photo",
+  "Illustrator",
+  "Photoshop",
+  "Figma",
   "Final Cut Pro",
   "Microsoft Office",
   "Google Workspace",
-  "Video Production",
-  "Photography",
-  "Brand Design",
 ];
 
 const About = () => {
   return (
-    <section
-      className="bg-primary-light min-h-screen py-8 sm:py-12 md:py-16"
-      id="about"
-    >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="bg-primary-light section-container" id="about">
+      <div className="content-container">
         {/* Header text */}
         <SectionHeader
           title="About Me"

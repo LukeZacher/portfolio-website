@@ -20,7 +20,7 @@ const EducationCard = ({
       rel="noopener noreferrer"
       className="block"
     >
-      <div className="bg-primary hover:bg-primary-dark transition-colors duration-300 rounded-lg p-6 flex flex-col">
+      <div className="bg-primary hover:bg-primary-dark hover:scale-[1.02] transition-all duration-300 rounded-lg p-6 flex flex-col">
         <div className="flex justify-between items-center mb-2">
           <h3 className="text-neutral-50 text-xl font-bold">
             {degree}, {degreeType}
