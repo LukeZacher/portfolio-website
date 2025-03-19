@@ -4,7 +4,7 @@ import DesignProjectCard from "./DesignProjectCard";
 
 // Import programming project images
 import mobSimulatorImage from "../../../assets/project-images/programming/Mob-Simulator-Homepage.png";
-import researchProjectImage from "../../../assets/project-images/programming/Research-Project-Informational-Website.png";
+import researchProjectImage from "../../../assets/project-images/programming/Research-Project-Informational-Website.jpg";
 
 // Import design project images
 import toyPackagingImage from "../../../assets/project-images/graphic-design/Toy-Packaging.jpg";

@@ -1,5 +1,4 @@
 import { GithubIcon, LinkedinIcon, Download } from "lucide-react";
-import lukePortrait from "../../../assets/Luke-Portrait.jpg";
 
 const Hero = () => {
   return (
@@ -75,7 +74,7 @@ const Hero = () => {
             <div className="w-[280px] h-[280px] sm:w-[350px] sm:h-[350px] lg:w-[420px] lg:h-[420px] rounded-full bg-neutral-800 overflow-hidden">
               {/*Replace with actual image later */}
               <img
-                src={lukePortrait}
+                src="/images/Luke-Portrait.jpg"
                 alt="Luke Zacher Portrait"
                 className="w-full h-full"
               ></img>
