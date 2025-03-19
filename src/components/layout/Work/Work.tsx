@@ -96,10 +96,15 @@ const Work = () => {
               "Flask",
               "SQL",
             ]}
-            githubUrl="https://github.com/..."
-            liveUrl="https://project-url.com"
+          />
+          <ProgrammingProjectCard
+            title="Research Project Informational Website"
+            description="A responsive informational website dedicated to the mob research project I am a part of. Features several sections, including an image carousel, Twitter/X widget, publications, and tools page. Built using Vite, React, TypeScript, and TailwindCSS V4."
+            image="/src/assets/project-images/programming/Research-Project-Informational-Website.png"
+            technologies={["React", "TypeScript", "TailwindCSS", "HTML"]}
           />
         </div>
+
         {/* Graphic Design Projects */}
         <div>
           <div className="about-subheading mb-8">Graphic Design Projects</div>

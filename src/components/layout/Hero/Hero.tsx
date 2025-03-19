@@ -1,11 +1,12 @@
 import { GithubIcon, LinkedinIcon, Download } from "lucide-react";
+import lukePortrait from "../../../assets/Luke-Portrait.jpg";
 
 const Hero = () => {
   return (
     <section className="min-h-[calc(100vh-60px)] bg-primary pb-8 sm:pb-0">
       <div className="content-container py-4 lg:py-12 xl:py-6 2xl:py-40 h-full">
         {/* Container for left text and right image */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-5 gap-4 xl:gap-12 mb-8 md:mb-16">
+        <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-5 gap-4 xl:gap-12 mb-8 md:mb-12">
           {/* Left side text and social media icons */}
           <div className="col-span-1  xl:col-span-3 flex flex-col justify-center">
             <h4 className="text-secondary text-base sm:text-lg font-medium mb-2">
@@ -73,7 +74,11 @@ const Hero = () => {
           <div className="col-span-1  xl:col-span-2 flex items-center justify-center">
             <div className="w-[280px] h-[280px] sm:w-[350px] sm:h-[350px] lg:w-[420px] lg:h-[420px] rounded-full bg-neutral-800 overflow-hidden">
               {/*Replace with actual image later */}
-              <div className="w-full h-full bg-neutral-700"></div>
+              <img
+                src={lukePortrait}
+                alt="Luke Zacher Portrait"
+                className="w-full h-full"
+              ></img>
             </div>
           </div>
         </div>
