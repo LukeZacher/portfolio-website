@@ -4,11 +4,17 @@ import { Menu, X } from "lucide-react";
 
 const Navbar = () => {
   const menuRef = useRef<HTMLDivElement | null>(null);
+  const buttonRef = useRef<HTMLButtonElement | null>(null);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
-      if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
+      if (
+        menuRef.current &&
+        !menuRef.current.contains(event.target as Node) &&
+        buttonRef.current &&
+        !buttonRef.current.contains(event.target as Node)
+      ) {
         setIsMenuOpen(false);
       }
     };
@@ -49,16 +55,17 @@ const Navbar = () => {
 
         {/* Mobile Menu Button */}
         <button
+          ref={buttonRef}
           onClick={toggleMenu}
-          className="md:hidden text-neutral-200 hover:text-neutral-50"
+          className="md:hidden text-neutral-200 hover:text-neutral-50 bg-primary-dark py-2 px-3"
           aria-label="Toggle menu"
           aria-expanded={isMenuOpen}
           aria-controls="mobile-menu"
         >
           {isMenuOpen ? (
-            <X className="h-5 w-5" />
+            <X className="h-6 w-6" />
           ) : (
-            <Menu className="h-5 w-5" />
+            <Menu className="h-6 w-6" />
           )}
         </button>
 
