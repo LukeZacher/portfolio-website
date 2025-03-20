@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { X } from "lucide-react";
 import TechTag from "../../shared/TechTag";
 
 interface DesignProjectProps {
@@ -58,9 +59,9 @@ const DesignProjectCard = ({
                 e.stopPropagation();
                 setIsModalOpen(false);
               }}
-              className="fixed top-4 right-4 text-white text-2xl px-6 py-3"
+              className="fixed top-4 right-4 text-white text-2xl px-3 py-2"
             >
-              ✕
+              <X className="h-6 w-6" />
             </button>
             <img
               src={image}
