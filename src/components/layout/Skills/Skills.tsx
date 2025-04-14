@@ -1,5 +1,6 @@
 import SectionHeader from "../../shared/SectionHeader";
 import SkillCard from "./SkillCard";
+import angularIcon from "/src/assets/icons/angular.svg";
 import amazonwebservicesIcon from "/src/assets/icons/amazonwebservices.svg";
 import bootstrapIcon from "/src/assets/icons/bootstrap.svg";
 import cssIcon from "/src/assets/icons/css.svg";
@@ -15,7 +16,6 @@ import jinjaIcon from "/src/assets/icons/jinja.svg";
 import macosIcon from "/src/assets/icons/macos.svg";
 import mongodbIcon from "/src/assets/icons/mongodb.svg";
 import mysqlIcon from "/src/assets/icons/mysql.svg";
-import nextdotjsIcon from "/src/assets/icons/nextdotjs.svg";
 import nodedotjsIcon from "/src/assets/icons/nodedotjs.svg";
 import postgresqlIcon from "/src/assets/icons/postgresql.svg";
 import pythonIcon from "/src/assets/icons/python.svg";
@@ -51,17 +51,16 @@ const skillCategories = [
     title: "Frontend Development",
     skills: [
       { name: "React", icon: reactIcon },
-      { name: "React Native", icon: reactnativeIcon },
+      { name: "Angular", icon: angularIcon },
       { name: "TailwindCSS", icon: tailwindcssIcon },
+      { name: "React Native", icon: reactnativeIcon },
       { name: "Bootstrap", icon: bootstrapIcon },
-      { name: "Next.js", icon: nextdotjsIcon },
     ],
   },
   {
     title: "Backend Development",
     skills: [
       { name: "Node.js", icon: nodedotjsIcon },
-      { name: "Express.js", icon: expressIcon },
       { name: "Flask", icon: flaskIcon },
       { name: "Spring Boot", icon: springIcon },
       { name: "Jinja", icon: jinjaIcon },
