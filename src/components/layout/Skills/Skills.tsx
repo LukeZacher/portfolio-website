@@ -5,7 +5,7 @@ import amazonwebservicesIcon from "/src/assets/icons/amazonwebservices.svg";
 import bootstrapIcon from "/src/assets/icons/bootstrap.svg";
 import cssIcon from "/src/assets/icons/css.svg";
 import dockerIcon from "/src/assets/icons/docker.svg";
-import expressIcon from "/src/assets/icons/express.svg";
+//import expressIcon from "/src/assets/icons/express.svg";
 import flaskIcon from "/src/assets/icons/flask.svg";
 import gitIcon from "/src/assets/icons/git.svg";
 import githubIcon from "/src/assets/icons/github.svg";
