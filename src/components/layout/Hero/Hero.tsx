@@ -72,9 +72,8 @@ const Hero = () => {
           {/* Right side image */}
           <div className="col-span-1  xl:col-span-2 flex items-center justify-center">
             <div className="w-[280px] h-[280px] sm:w-[350px] sm:h-[350px] lg:w-[420px] lg:h-[420px] rounded-full bg-neutral-800 overflow-hidden">
-              {/*Replace with actual image later */}
               <img
-                src="/images/Luke-Portrait.jpg"
+                src="/images/jesse-schrack.png"
                 alt="Luke Zacher Portrait"
                 className="w-full h-full"
               ></img>
